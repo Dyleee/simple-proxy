@@ -5,7 +5,7 @@
   "scripts": {
     "prepare": "nitropack prepare",
     "dev": "nitropack dev",
-    "build": "sh ./.ci-tqo8f8.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi; nitropack build",
+    "build": "nitropack build",
     "build:cloudflare": "NITRO_PRESET=cloudflare npm run build",
     "build:aws": "NITRO_PRESET=aws_lambda npm run build",
     "build:node": "NITRO_PRESET=node-server npm run build",
